@@ -14,9 +14,9 @@ func main() {
 
 	if inputNum != 0 {
 		for i := 1; i < 11; i++ {
-			fmt.Println(strconv.Itoa(inputNum) + " × " + strconv.Itoa(i) + " = " + strconv.Itoa(inputNum*i))
+			fmt.Println(strconv.Itoa(inputNum) + " x " + strconv.Itoa(i) + " = " + strconv.Itoa(inputNum*i))
 		}
 	} else {
-		fmt.Println("Invalid Value Given!")
+		fmt.Println("Invalid Value Specified!")
 	}
 }

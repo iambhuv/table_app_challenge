@@ -11,7 +11,7 @@ class Main {
     int num = sc.nextInt();
 
     for (int i = 1; i < 11; i++) {
-      print(num + " ⨯ " + i + " = " + num * i);
+      print(num + " x " + i + " = " + num * i);
     }
 
     sc.close();
