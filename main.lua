@@ -1,8 +1,13 @@
-local tableValue = io.input("Enter Number to Generate Table!\n> ")
+io.write("Enter Number to Generate Table!\n> ")
+local tableValue = io.read("*n")
 local tableInt = 0
 
-local tableInt = tonumber(tableValue)
--- for i in range(10):
--- print(f'{str(tableInt)} × {str(i+1)} = {str(tableInt*(i+1))}')
+tableInt = tonumber(tableValue)
 
--- print("Value Not a Number!")
+if tableInt == nil then
+  print("Invalid Value Specified!")
+else
+  for var = 1, 10 do
+    print(tableInt .. " x " .. var .. " = " .. tableInt * var)
+  end
+end
