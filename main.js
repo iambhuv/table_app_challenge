@@ -18,11 +18,11 @@ const main = async () => {
   const numberToTable = await input("Enter Number to Generate Table!\n> ");
   
   if (isNaN(parseInt(numberToTable))) {
-    return console.log("Value Not a Number!");
+    return console.log("Invalid Value Specified!");
   }
 
   for (let i = 1; i < 11; i++) {
-    console.log(`${numberToTable} × ${i} = ${numberToTable * i}`);
+    console.log(`${numberToTable} x ${i} = ${numberToTable * i}`);
   }
 };
 
